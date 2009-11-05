@@ -2,19 +2,19 @@ package headfirst.combining.observer;
 
 public class CountingDuckFactory extends AbstractDuckFactory {
   
-	public Quackable createMallardDuck() {
-		return new QuackCounter(new MallardDuck());
-	}
+    public Quackable createMallardDuck() {
+        return new QuackCounter(new MallardDuck());
+    }
   
-	public Quackable createRedheadDuck() {
-		return new QuackCounter(new RedheadDuck());
-	}
+    public Quackable createRedheadDuck() {
+        return new QuackCounter(new RedheadDuck());
+    }
   
-	public Quackable createDuckCall() {
-		return new QuackCounter(new DuckCall());
-	}
+    public Quackable createDuckCall() {
+        return new QuackCounter(new DuckCall());
+    }
    
-	public Quackable createRubberDuck() {
-		return new QuackCounter(new RubberDuck());
-	}
+    public Quackable createRubberDuck() {
+        return new QuackCounter(new RubberDuck());
+    }
 }
