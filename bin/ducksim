@@ -1,5 +1,0 @@
-#!/bin/bash
-
-HERE="`dirname $0`"
-
-java -cp $HERE/../dist/headfirst.jar headfirst.combining.ducks.DuckSimulator $*
