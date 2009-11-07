@@ -374,22 +374,15 @@ JAVA_CLASSES =  \
 	classes/headfirst/state/gumballstatewinner/SoldState.class \
 	classes/headfirst/state/gumballstatewinner/State.class \
 	classes/headfirst/state/gumballstatewinner/WinnerState.class \
-	classes/headfirst/strategy/DecoyDuck.class \
 	classes/headfirst/strategy/Duck.class \
-	classes/headfirst/strategy/FakeQuack.class \
 	classes/headfirst/strategy/FlyBehavior.class \
 	classes/headfirst/strategy/FlyNoWay.class \
-	classes/headfirst/strategy/FlyRocketPowered.class \
 	classes/headfirst/strategy/FlyWithWings.class \
 	classes/headfirst/strategy/MallardDuck.class \
 	classes/headfirst/strategy/MiniDuckSimulator.class \
-	classes/headfirst/strategy/MiniDuckSimulator1.class \
-	classes/headfirst/strategy/ModelDuck.class \
 	classes/headfirst/strategy/MuteQuack.class \
 	classes/headfirst/strategy/Quack.class \
 	classes/headfirst/strategy/QuackBehavior.class \
-	classes/headfirst/strategy/RedHeadDuck.class \
-	classes/headfirst/strategy/RubberDuck.class \
 	classes/headfirst/strategy/Squeak.class \
 	classes/headfirst/templatemethod/applet/MyApplet.class \
 	classes/headfirst/templatemethod/barista/BeverageTestDrive.class \
@@ -457,33 +450,19 @@ _HEADFIRST_STRATEGY_CLASSES =  \
 	classes/headfirst/strategy/MuteQuack.class \
 	classes/headfirst/strategy/FlyBehavior.class \
 	classes/headfirst/strategy/QuackBehavior.class \
-	classes/headfirst/strategy/RubberDuck.class \
-	classes/headfirst/strategy/RedHeadDuck.class \
 	classes/headfirst/strategy/MallardDuck.class \
-	classes/headfirst/strategy/DecoyDuck.class \
-	classes/headfirst/strategy/FlyRocketPowered.class \
-	classes/headfirst/strategy/FakeQuack.class \
 	classes/headfirst/strategy/FlyNoWay.class \
-	classes/headfirst/strategy/ModelDuck.class \
-	classes/headfirst/strategy/Duck.class \
-	classes/headfirst/strategy/MiniDuckSimulator1.class
+	classes/headfirst/strategy/Duck.class
 _HEADFIRST_STRATEGY_SOURCES =  \
-	src/headfirst/strategy/FakeQuack.java \
-	src/headfirst/strategy/DecoyDuck.java \
 	src/headfirst/strategy/QuackBehavior.java \
 	src/headfirst/strategy/MallardDuck.java \
 	src/headfirst/strategy/Duck.java \
 	src/headfirst/strategy/Squeak.java \
-	src/headfirst/strategy/RedHeadDuck.java \
 	src/headfirst/strategy/FlyBehavior.java \
 	src/headfirst/strategy/FlyNoWay.java \
-	src/headfirst/strategy/FlyRocketPowered.java \
-	src/headfirst/strategy/RubberDuck.java \
 	src/headfirst/strategy/Quack.java \
-	src/headfirst/strategy/ModelDuck.java \
 	src/headfirst/strategy/FlyWithWings.java \
 	src/headfirst/strategy/MuteQuack.java \
-	src/headfirst/strategy/MiniDuckSimulator1.java \
 	src/headfirst/strategy/MiniDuckSimulator.java
 $(_HEADFIRST_STRATEGY_CLASSES): $(_HEADFIRST_STRATEGY_SOURCES)
 	$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG)  $(_HEADFIRST_STRATEGY_SOURCES)
@@ -633,6 +612,7 @@ _HEADFIRST_COMMAND_PARTY_CLASSES =  \
 	classes/headfirst/command/party/StereoOnWithCDCommand.class \
 	classes/headfirst/command/party/CeilingFanMediumCommand.class
 _HEADFIRST_COMMAND_PARTY_SOURCES =  \
+	src/headfirst/command/party/NoCommand.java \
 	src/headfirst/command/party/CeilingFanMediumCommand.java \
 	src/headfirst/command/party/LightOnCommand.java \
 	src/headfirst/command/party/StereoOffCommand.java \
@@ -640,7 +620,6 @@ _HEADFIRST_COMMAND_PARTY_SOURCES =  \
 	src/headfirst/command/party/RemoteControl.java \
 	src/headfirst/command/party/LivingroomLightOffCommand.java \
 	src/headfirst/command/party/Stereo.java \
-	src/headfirst/command/party/NoCommand.java \
 	src/headfirst/command/party/LightOffCommand.java \
 	src/headfirst/command/party/CeilingFan.java \
 	src/headfirst/command/party/TV.java \
@@ -692,13 +671,13 @@ $(_HEADFIRST_COMBINING_ADAPTER_CLASSES): $(_HEADFIRST_COMBINING_ADAPTER_SOURCES)
 
 _HEADFIRST_FACTORY_PIZZAFM_CLASSES =  \
 	classes/headfirst/factory/pizzafm/PizzaTestDrive.class \
-	classes/headfirst/factory/pizzafm/NYStylePepperoniPizza.class \
 	classes/headfirst/factory/pizzafm/PizzaStore.class \
 	classes/headfirst/factory/pizzafm/ChicagoStyleVeggiePizza.class \
 	classes/headfirst/factory/pizzafm/NYStyleClamPizza.class \
 	classes/headfirst/factory/pizzafm/DependentPizzaStore.class \
 	classes/headfirst/factory/pizzafm/Pizza.class \
 	classes/headfirst/factory/pizzafm/ChicagoStyleCheesePizza.class \
+	classes/headfirst/factory/pizzafm/NYStylePepperoniPizza.class \
 	classes/headfirst/factory/pizzafm/NYStyleVeggiePizza.class \
 	classes/headfirst/factory/pizzafm/ChicagoPizzaStore.class \
 	classes/headfirst/factory/pizzafm/NYStyleCheesePizza.class \
@@ -932,11 +911,11 @@ _HEADFIRST_DECORATOR_STARBUZZ_SOURCES =  \
 	src/headfirst/decorator/starbuzz/Espresso.java \
 	src/headfirst/decorator/starbuzz/Mocha.java \
 	src/headfirst/decorator/starbuzz/Beverage.java \
-	src/headfirst/decorator/starbuzz/CondimentDecorator.java \
 	src/headfirst/decorator/starbuzz/Decaf.java \
 	src/headfirst/decorator/starbuzz/Soy.java \
 	src/headfirst/decorator/starbuzz/HouseBlend.java \
 	src/headfirst/decorator/starbuzz/DarkRoast.java \
+	src/headfirst/decorator/starbuzz/CondimentDecorator.java \
 	src/headfirst/decorator/starbuzz/Whip.java \
 	src/headfirst/decorator/starbuzz/StarbuzzCoffee.java \
 	src/headfirst/decorator/starbuzz/Milk.java
@@ -1051,6 +1030,7 @@ _HEADFIRST_FACTORY_PIZZAAF_SOURCES =  \
 	src/headfirst/factory/pizzaaf/Pepperoni.java \
 	src/headfirst/factory/pizzaaf/Pizza.java \
 	src/headfirst/factory/pizzaaf/Onion.java \
+	src/headfirst/factory/pizzaaf/ParmesanCheese.java \
 	src/headfirst/factory/pizzaaf/FrozenClams.java \
 	src/headfirst/factory/pizzaaf/ChicagoPizzaIngredientFactory.java \
 	src/headfirst/factory/pizzaaf/Dough.java \
@@ -1061,16 +1041,15 @@ _HEADFIRST_FACTORY_PIZZAAF_SOURCES =  \
 	src/headfirst/factory/pizzaaf/Garlic.java \
 	src/headfirst/factory/pizzaaf/Clams.java \
 	src/headfirst/factory/pizzaaf/Veggies.java \
-	src/headfirst/factory/pizzaaf/ParmesanCheese.java \
 	src/headfirst/factory/pizzaaf/MarinaraSauce.java \
 	src/headfirst/factory/pizzaaf/NYPizzaStore.java \
+	src/headfirst/factory/pizzaaf/CheesePizza.java \
 	src/headfirst/factory/pizzaaf/NYPizzaIngredientFactory.java \
 	src/headfirst/factory/pizzaaf/PizzaIngredientFactory.java \
 	src/headfirst/factory/pizzaaf/BlackOlives.java \
 	src/headfirst/factory/pizzaaf/PizzaTestDrive.java \
 	src/headfirst/factory/pizzaaf/VeggiePizza.java \
-	src/headfirst/factory/pizzaaf/Mushroom.java \
-	src/headfirst/factory/pizzaaf/CheesePizza.java
+	src/headfirst/factory/pizzaaf/Mushroom.java
 $(_HEADFIRST_FACTORY_PIZZAAF_CLASSES): $(_HEADFIRST_FACTORY_PIZZAAF_SOURCES)
 	$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG)  $(_HEADFIRST_FACTORY_PIZZAAF_SOURCES)
 
@@ -1165,11 +1144,11 @@ _HEADFIRST_FACTORY_PIZZAS_CLASSES =  \
 _HEADFIRST_FACTORY_PIZZAS_SOURCES =  \
 	src/headfirst/factory/pizzas/PizzaTestDrive.java \
 	src/headfirst/factory/pizzas/PizzaStore.java \
-	src/headfirst/factory/pizzas/VeggiePizza.java \
 	src/headfirst/factory/pizzas/Pizza.java \
 	src/headfirst/factory/pizzas/ClamPizza.java \
 	src/headfirst/factory/pizzas/CheesePizza.java \
 	src/headfirst/factory/pizzas/SimplePizzaFactory.java \
+	src/headfirst/factory/pizzas/VeggiePizza.java \
 	src/headfirst/factory/pizzas/PepperoniPizza.java
 $(_HEADFIRST_FACTORY_PIZZAS_CLASSES): $(_HEADFIRST_FACTORY_PIZZAS_SOURCES)
 	$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG)  $(_HEADFIRST_FACTORY_PIZZAS_SOURCES)
