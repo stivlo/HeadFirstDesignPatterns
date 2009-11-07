@@ -44,14 +44,19 @@ class MakeMaker(object):
     HEADFIRST_JAR = headfirst.jar
     """
     _jar_task = u"""
-    $(DIST_DIR)/headfirst.jar: $(JAVA_CLASSES)
+    $(DIST_DIR)/$(HEADFIRST_JAR): $(JAVA_CLASSES)
     \t$(JAR) $(JAR_ARGS) $(HEADFIRST_JAR) -C $(CLASSES_DIR) .
     \tmv $(HEADFIRST_JAR) $(DIST_DIR)
 
     """
     _all_task = u"""
-    all: $(DIST_DIR)/headfirst.jar
+    all: $(DIST_DIR)/$(HEADFIRST_JAR)
 
+    """
+    _clean_task = u"""
+    clean:
+    \tfind $(CLASSES_DIR) -name \*.class -exec rm {} \;
+    \tfind $(DIST_DIR) -name \*.jar -exec rm {} \;
     """
     javac_command = u'\t$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG) '
 
@@ -66,6 +71,7 @@ class MakeMaker(object):
         self._write_java_classes()
         self.writer.writeln(textwrap.dedent(self._all_task))
         self.writer.writeln(textwrap.dedent(self._jar_task))
+        self.writer.writeln(textwrap.dedent(self._clean_task))
         self._tack_on_java_tasks()
 
     def _tack_on_java_tasks(self):

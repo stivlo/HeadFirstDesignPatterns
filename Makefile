@@ -401,14 +401,19 @@ JAVA_CLASSES =  \
 	classes/headfirst/templatemethod/sort/Duck.class \
 	classes/headfirst/templatemethod/sort/DuckSortTestDrive.class
 
-all: $(DIST_DIR)/headfirst.jar
+all: $(DIST_DIR)/$(HEADFIRST_JAR)
 
 
 
-$(DIST_DIR)/headfirst.jar: $(JAVA_CLASSES)
+$(DIST_DIR)/$(HEADFIRST_JAR): $(JAVA_CLASSES)
 	$(JAR) $(JAR_ARGS) $(HEADFIRST_JAR) -C $(CLASSES_DIR) .
 	mv $(HEADFIRST_JAR) $(DIST_DIR)
 
+
+
+clean:
+	find $(CLASSES_DIR) -name \*.class -exec rm {} \;
+	find $(DIST_DIR) -name \*.jar -exec rm {} \;
 
 
 _ADAPTER_DUCKS_CLASSES =  \
