@@ -422,7 +422,7 @@ distclean:
 
 
 test: $(DIST_DIR)/$(HEADFIRST_JAR)
-	nosetests -i ^itest ./headfirst/tests
+	nosetests -v -i ^itest ./headfirst/tests
 
 
 _ADAPTER_DUCKS_CLASSES =  \

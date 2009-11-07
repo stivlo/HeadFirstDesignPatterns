@@ -65,7 +65,7 @@ class MakeMaker(object):
     """
     _test_task = u"""
     test: $(DIST_DIR)/$(HEADFIRST_JAR)
-    \tnosetests -i ^itest ./headfirst/tests
+    \tnosetests -v -i ^itest ./headfirst/tests
     """
     javac_command = u'\t$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG) '
 
