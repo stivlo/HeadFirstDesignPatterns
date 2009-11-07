@@ -1,0 +1,56 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:HeadFirstDesignPatterns.Strategy.Duck.Duck">
+      <Item value="QuackBehavior" priority="0" />
+      <Item value="PerformFly" priority="0" />
+      <Item value="FlyBehavoir" priority="6" />
+      <Item value="PerformQuack" priority="0" />
+      <Item value="Equals" priority="0" />
+      <Item value="FlyBehavior" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HeadFirstDesignPatterns.Strategy.Duck.IQuackBehavior">
+      <Item value="Quacking" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HeadFirstDesignPatterns.Strategy.Duck.RubberDuck">
+      <Item value="FlyBehavoir" priority="2" />
+      <Item value="PerformFly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HeadFirstDesignPatterns.Strategy.Duck.IFlyBehavior">
+      <Item value="Fly" priority="8" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:RubberDuck.cs" caret="247" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:Quack.cs" caret="141" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:MallardDuck.cs" caret="210" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:IFlyBehavior.cs" caret="186" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:FlyNoWay.cs" caret="193" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:IQuackBehavior.cs" caret="141" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:MuteQuack.cs" caret="0" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:ModelDuck.cs" caret="191" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:FlyRocketPowered.cs" caret="174" visual-x="0" visual-y="0" />
+      <File id="5EF36F2C-D81F-423D-8AF9-E464A617D151/f:Duck.cs" caret="531" visual-x="0" visual-y="170" />
+      <File id="DAB3D48C-4398-4854-A564-C73980D9B299/f:StrategyDuckFixture.cs" caret="1582" visual-x="0" visual-y="0" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+    <DecorateModifiers>False</DecorateModifiers>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>
