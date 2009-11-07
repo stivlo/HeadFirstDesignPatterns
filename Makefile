@@ -4,7 +4,7 @@ DIST_DIR = $(PWD)/dist
 CLASSES_ARG = -d $(CLASSES_DIR)
 JAVAC_FLAGS = -Xlint:unchecked
 JAR = jar
-JAR_ARGS = cvf
+JAR_ARGS = cf
 HEADFIRST_JAR = headfirst.jar
 
 JAVA_CLASSES =  \
@@ -377,9 +377,11 @@ JAVA_CLASSES =  \
 	classes/headfirst/strategy/Duck.class \
 	classes/headfirst/strategy/FlyBehavior.class \
 	classes/headfirst/strategy/FlyNoWay.class \
+	classes/headfirst/strategy/FlyRocketPowered.class \
 	classes/headfirst/strategy/FlyWithWings.class \
 	classes/headfirst/strategy/MallardDuck.class \
 	classes/headfirst/strategy/MiniDuckSimulator.class \
+	classes/headfirst/strategy/ModelDuck.class \
 	classes/headfirst/strategy/MuteQuack.class \
 	classes/headfirst/strategy/Quack.class \
 	classes/headfirst/strategy/QuackBehavior.class \
@@ -451,7 +453,9 @@ _HEADFIRST_STRATEGY_CLASSES =  \
 	classes/headfirst/strategy/FlyBehavior.class \
 	classes/headfirst/strategy/QuackBehavior.class \
 	classes/headfirst/strategy/MallardDuck.class \
+	classes/headfirst/strategy/FlyRocketPowered.class \
 	classes/headfirst/strategy/FlyNoWay.class \
+	classes/headfirst/strategy/ModelDuck.class \
 	classes/headfirst/strategy/Duck.class
 _HEADFIRST_STRATEGY_SOURCES =  \
 	src/headfirst/strategy/QuackBehavior.java \
@@ -460,7 +464,9 @@ _HEADFIRST_STRATEGY_SOURCES =  \
 	src/headfirst/strategy/Squeak.java \
 	src/headfirst/strategy/FlyBehavior.java \
 	src/headfirst/strategy/FlyNoWay.java \
+	src/headfirst/strategy/FlyRocketPowered.java \
 	src/headfirst/strategy/Quack.java \
+	src/headfirst/strategy/ModelDuck.java \
 	src/headfirst/strategy/FlyWithWings.java \
 	src/headfirst/strategy/MuteQuack.java \
 	src/headfirst/strategy/MiniDuckSimulator.java
@@ -1043,13 +1049,13 @@ _HEADFIRST_FACTORY_PIZZAAF_SOURCES =  \
 	src/headfirst/factory/pizzaaf/Veggies.java \
 	src/headfirst/factory/pizzaaf/MarinaraSauce.java \
 	src/headfirst/factory/pizzaaf/NYPizzaStore.java \
-	src/headfirst/factory/pizzaaf/CheesePizza.java \
 	src/headfirst/factory/pizzaaf/NYPizzaIngredientFactory.java \
 	src/headfirst/factory/pizzaaf/PizzaIngredientFactory.java \
 	src/headfirst/factory/pizzaaf/BlackOlives.java \
 	src/headfirst/factory/pizzaaf/PizzaTestDrive.java \
 	src/headfirst/factory/pizzaaf/VeggiePizza.java \
-	src/headfirst/factory/pizzaaf/Mushroom.java
+	src/headfirst/factory/pizzaaf/Mushroom.java \
+	src/headfirst/factory/pizzaaf/CheesePizza.java
 $(_HEADFIRST_FACTORY_PIZZAAF_CLASSES): $(_HEADFIRST_FACTORY_PIZZAAF_SOURCES)
 	$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG)  $(_HEADFIRST_FACTORY_PIZZAAF_SOURCES)
 
