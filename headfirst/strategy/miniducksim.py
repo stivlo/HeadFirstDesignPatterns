@@ -6,6 +6,11 @@ def main(sysargs=sys.argv[:]):
     mallard.perform_quack()
     mallard.perform_fly()
 
+    model = ModelDuck()
+    model.perform_fly()
+    model.fly_behavior = FlyRocketPowered()
+    model.perform_fly()
+
     return 0
 
 
@@ -21,6 +26,16 @@ class Duck(object):
 
     def swim(self):
         print "All ducks float, even decoys!"
+
+
+class ModelDuck(Duck):
+
+    def __init__(self):
+        self.fly_behavior = FlyNoWay()
+        self.quack_behavior = Quack()
+
+    def display(self):
+        print "I'm a model duck"
 
 
 class MallardDuck(Duck):
@@ -43,6 +58,12 @@ class FlyWithWings(FlyBehavior):
 
     def fly(self):
         print "I'm flying!!"
+
+
+class FlyRocketPowered(FlyBehavior):
+
+    def fly(self):
+        print "I'm flying with a rocket!"
 
 
 class FlyNoWay(FlyBehavior):
