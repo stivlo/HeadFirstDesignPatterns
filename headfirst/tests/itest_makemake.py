@@ -1,12 +1,6 @@
-import os
-
 import headfirst.makemake as HM
 from headfirst import HEADFIRST_BASE
-
-
-def assert_exists(*parts):
-    fullpath = os.path.join(*parts)
-    assert os.path.exists(fullpath)
+from headfirst.tests._support import assert_exists
 
 
 def test_java_sources_classes_lister():
