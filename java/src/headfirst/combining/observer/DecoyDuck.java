@@ -1,26 +1,26 @@
 package headfirst.combining.observer;
 
 public class DecoyDuck implements Quackable {
-    Observable observable;
+	Observable observable;
 
-    public DecoyDuck() {
-        observable = new Observable(this);
-    }
+	public DecoyDuck() {
+		observable = new Observable(this);
+	}
  
-    public void quack() {
-        System.out.println("<< Silence >>");
-        notifyObservers();
-    }
+	public void quack() {
+		System.out.println("<< Silence >>");
+		notifyObservers();
+	}
  
-    public void registerObserver(Observer observer) {
-        observable.registerObserver(observer);
-    }
+	public void registerObserver(Observer observer) {
+		observable.registerObserver(observer);
+	}
 
-    public void notifyObservers() {
-        observable.notifyObservers();
-    }
+	public void notifyObservers() {
+		observable.notifyObservers();
+	}
  
-    public String toString() {
-        return "Decoy Duck";
-    }
+	public String toString() {
+		return "Decoy Duck";
+	}
 }

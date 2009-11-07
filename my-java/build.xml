@@ -1,0 +1,32 @@
+<project name="Patterns" default="compile" basedir=".">
+<description>
+	Build file for Head First Design Patterns
+</description>
+<property name="src" location="src" />
+<property name="classes" location="classes" />
+<property name="include" location="classes" />
+
+<target name="init">
+	<!-- create the time stamp -->
+	<tstamp />
+	<!-- create the build directory used by compile -->
+	<mkdir dir="${classes}"/>
+</target>
+
+<path id="compile.classpath">
+</path>
+
+<target name="compile" depends="init" description="compile the source">
+	<!-- compile the java code from ${src} to ${classes} -->
+	<javac srcdir="${src}" destdir="${classes}">
+		<classpath refid="compile.classpath"/>
+	</javac>
+</target>
+
+<target name="clean" description="clean up">
+	<!-- delete the ${classes} and ${dist} directory trees -->
+	<delete dir="${classes}"/>
+	<delete dir="${dist}"/>
+</target>
+
+</project>

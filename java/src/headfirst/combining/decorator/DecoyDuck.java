@@ -2,11 +2,11 @@ package headfirst.combining.decorator;
 
 public class DecoyDuck implements Quackable {
  
-    public void quack() {
-        System.out.println("<< Silence >>");
-    }
+	public void quack() {
+		System.out.println("<< Silence >>");
+	}
  
-    public String toString() {
-        return "Decoy Duck";
-    }
+	public String toString() {
+		return "Decoy Duck";
+	}
 }

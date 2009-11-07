@@ -1,3 +1,4 @@
 *.pyc
 java/dist/headfirst.jar
-java/bin/headfirst
+java/classes/headfirst
+my-java/classes/headfirst
