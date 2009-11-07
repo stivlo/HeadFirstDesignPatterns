@@ -63,6 +63,10 @@ class MakeMaker(object):
     \tfind $(CLASSES_DIR) -name \*.class -exec rm {} \;
 
     """
+    _test_task = u"""
+    test: $(DIST_DIR)/$(HEADFIRST_JAR)
+    \tnosetests -i ^itest ./headfirst/tests
+    """
     javac_command = u'\t$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG) '
 
     def __init__(self, outfile, basedir):
@@ -77,6 +81,7 @@ class MakeMaker(object):
         self.writer.writeln(dedent(self._all_task))
         self.writer.writeln(dedent(self._jar_task))
         self.writer.writeln(dedent(self._clean_tasks))
+        self.writer.writeln(dedent(self._test_task))
         self._tack_on_java_tasks()
 
     def _tack_on_java_tasks(self):

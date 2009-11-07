@@ -9,7 +9,8 @@ def assert_exists(*parts):
     assert os.path.exists(fullpath)
 
 
-def test_java_source_list_maker():
-    list_maker = HM.JavaSourceListMaker(HEADFIRST_BASE)
-    for source in list_maker.get_source_list():
-        yield assert_exists, list_maker.basedir, source
+def test_java_sources_classes_lister():
+    lister = HM.JavaSourcesClassesLister(HEADFIRST_BASE)
+    for dirpath, source_file, class_file in lister.get_sources_classes():
+        yield assert_exists, lister.basedir, source_file
+        yield assert_exists, dirpath

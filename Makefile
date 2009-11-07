@@ -421,6 +421,10 @@ distclean:
 
 
 
+test: $(DIST_DIR)/$(HEADFIRST_JAR)
+	nosetests -i ^itest ./headfirst/tests
+
+
 _ADAPTER_DUCKS_CLASSES =  \
 	classes/headfirst/adapter/ducks/TurkeyAdapter.class \
 	classes/headfirst/adapter/ducks/TurkeyTestDrive.class \
