@@ -2,8 +2,8 @@ import os
 import re
 import sys
 import fnmatch
-import textwrap
 from io import StringIO
+from textwrap import dedent
 
 from headfirst import HEADFIRST_BASE
 
@@ -53,10 +53,15 @@ class MakeMaker(object):
     all: $(DIST_DIR)/$(HEADFIRST_JAR)
 
     """
-    _clean_task = u"""
+    _clean_tasks = u"""
     clean:
     \tfind $(CLASSES_DIR) -name \*.class -exec rm {} \;
     \tfind $(DIST_DIR) -name \*.jar -exec rm {} \;
+
+
+    distclean:
+    \tfind $(CLASSES_DIR) -name \*.class -exec rm {} \;
+
     """
     javac_command = u'\t$(JAVAC) $(JAVAC_FLAGS) $(CLASSES_ARG) '
 
@@ -67,11 +72,11 @@ class MakeMaker(object):
         self.java_project_manager = JavaProjectManager(self.basedir)
 
     def make_make(self):
-        self.writer.writeln(textwrap.dedent(self._top_make_vars))
+        self.writer.writeln(dedent(self._top_make_vars))
         self._write_java_classes()
-        self.writer.writeln(textwrap.dedent(self._all_task))
-        self.writer.writeln(textwrap.dedent(self._jar_task))
-        self.writer.writeln(textwrap.dedent(self._clean_task))
+        self.writer.writeln(dedent(self._all_task))
+        self.writer.writeln(dedent(self._jar_task))
+        self.writer.writeln(dedent(self._clean_tasks))
         self._tack_on_java_tasks()
 
     def _tack_on_java_tasks(self):

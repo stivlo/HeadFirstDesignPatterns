@@ -416,6 +416,11 @@ clean:
 	find $(DIST_DIR) -name \*.jar -exec rm {} \;
 
 
+distclean:
+	find $(CLASSES_DIR) -name \*.class -exec rm {} \;
+
+
+
 _ADAPTER_DUCKS_CLASSES =  \
 	classes/headfirst/adapter/ducks/TurkeyAdapter.class \
 	classes/headfirst/adapter/ducks/TurkeyTestDrive.class \
