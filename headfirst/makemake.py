@@ -40,7 +40,7 @@ class MakeMaker(object):
     CLASSES_ARG = -d $(CLASSES_DIR)
     JAVAC_FLAGS = -Xlint:unchecked
     JAR = jar
-    JAR_ARGS = cvf
+    JAR_ARGS = cf
     HEADFIRST_JAR = headfirst.jar
     """
     _jar_task = u"""
