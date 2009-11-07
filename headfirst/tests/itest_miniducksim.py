@@ -1,8 +1,6 @@
 import os
-import sys
 import subprocess
 
-import headfirst.strategy.miniducksim as HSM
 from headfirst import HEADFIRST_BASE
 from headfirst.tests._support import assert_equal
 
@@ -24,7 +22,7 @@ def _assert_expected_output(exe):
     job = subprocess.Popen([exe],
                            stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE)
-    out, err = job.communicate()
+    out = job.communicate()[0]
     for i, line in enumerate(out.splitlines()):
         yield assert_equal, EXPECTED_LINES[i], line
 
