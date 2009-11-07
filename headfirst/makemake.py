@@ -105,7 +105,8 @@ class JavaProjectManager(object):
     def _group_into_projects(self):
         for project_dir in self.project_dirs:
             as_class_dir = project_dir.replace('src/', 'classes/')
-            name = re.sub('[./\\\\]', '_', project_dir.replace('src', ''))
+            name = re.sub('[./\\\\]', '_',
+                          project_dir.replace('src/headfirst', ''))
             sources = [source for source in self.all_source_files if
                        fnmatch.fnmatch(source, os.path.join(project_dir, '*'))]
             classes = [cls for cls in self.all_class_files if
@@ -129,7 +130,7 @@ class JavaProjectManager(object):
     def _tmp_write_java_tasks(self):
         self._tmp_java_tasks.truncate(0)
         writer = UnicodeBufWriter(self._tmp_java_tasks)
-        for proj in self.projects:
+        for proj in sorted(self.projects, key=lambda p: p.name):
             writer.write(proj.as_task())
             writer.writeln(u'')
             writer.writeln(u'')
