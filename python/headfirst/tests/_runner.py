@@ -15,3 +15,5 @@ def run_suite(verbose=False):
 def get_modules():
     from . import itest_miniducksim
     yield itest_miniducksim
+    from . import test_miniducksim
+    yield test_miniducksim

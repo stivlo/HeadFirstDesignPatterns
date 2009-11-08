@@ -96,7 +96,4 @@ class Squeak(QuackBehavior):
         print "Squeak"
 
 
-if __name__ == '__main__':
-    sys.exit(main())
-
 # vim:filetype=python
