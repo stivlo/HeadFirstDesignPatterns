@@ -16,6 +16,7 @@ SETUP_ARGS = dict(
     packages=[
         'headfirst',
         'headfirst.strategy',
+        'headfirst.observer',
         'headfirst.tests',
     ],
     scripts=[],
