@@ -2,3 +2,6 @@
 java/dist/headfirst.jar
 java/classes/headfirst
 my-java/classes/headfirst
+python/build
+python/dist
+.coverage
