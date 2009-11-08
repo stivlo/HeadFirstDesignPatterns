@@ -1,6 +1,0 @@
-export PATH=$PWD/bin:$PATH
-export PYTHONPATH=$PWD:$PYTHONPATH
-export CLASSPATH=$PWD/classes:$PWD/dist/headfirst.jar:$CLASSPATH
-
-
-# vim:filetype=sh
