@@ -2,9 +2,8 @@ from unittest import TestLoader, TextTestRunner, TestSuite
 
 
 def run_suite(verbose=False):
-    verbosity = 2 if verbose else 0
     loader = TestLoader()
-    runner = TextTestRunner(verbosity=verbosity)
+    runner = TextTestRunner(verbosity=2 if verbose else 1)
     suite = TestSuite()
     for mod in get_modules():
         suite.addTest(loader.loadTestsFromModule(mod))
