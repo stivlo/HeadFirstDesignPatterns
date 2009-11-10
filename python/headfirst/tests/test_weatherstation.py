@@ -1,7 +1,8 @@
 from unittest import TestCase
 
 from ..observer.weatherstation import Subject, Observer, DisplayElement, \
-                                      WeatherData
+                                      WeatherData, CurrentConditionsDisplay, \
+                                      main as weatherstation
 from ._support import call_and_capture_output
 
 
@@ -86,6 +87,55 @@ class TestWeatherData(TestCase):
         self.assertEqual(48.9, self.weather_data.temperature)
         self.assertEqual(74.3, self.weather_data.humidity)
         self.assertEqual(38.8, self.weather_data.pressure)
+
+
+class TestCurrentConditionsDisplay(TestCase):
+
+    def setUp(self):
+        self.weather_data = WeatherData()
+        self.display = CurrentConditionsDisplay(self.weather_data)
+
+    def test_initializes_with_weather_data_instance_and_registers(self):
+        self.assertEqual(self.weather_data, self.display.weather_data)
+        self.assertTrue(self.display in self.weather_data._observers)
+
+    def test_update_assigns_temp_and_humidity_and_calls_display(self):
+        was_called = [False]
+        def fake_display():
+            was_called[0] = True
+
+        self.display.display = fake_display
+        self.display.update(89.2, 44.5, 82.4)
+        self.assertEqual(89.2, self.display.temperature)
+        self.assertEqual(44.5, self.display.humidity)
+        self.assertTrue(was_called[0])
+
+
+class TestWeatherStation(TestCase):
+
+    def test_weatherstation(self):
+        return
+
+        out = call_and_capture_output(weatherstation)
+        self.assertNotEqual('', out)
+        for i, line in enumerate(out.splitlines()):
+            self.assertEqual(EXPECTED_LINES[i], line)
+
+
+EXPECTED_LINES = (
+    'Current conditions: 80.0F degrees and 65.0% humidity',
+    'Avg/Max/Min temperature = 80.0/80.0/80.0',
+    'Forecast: Improving weather on the way!',
+    'Heat index is 82.95535',
+    'Current conditions: 82.0F degrees and 70.0% humidity',
+    'Avg/Max/Min temperature = 81.0/82.0/80.0',
+    'Forecast: Watch out for cooler, rainy weather',
+    'Heat index is 86.90124',
+    'Current conditions: 78.0F degrees and 90.0% humidity',
+    'Avg/Max/Min temperature = 80.0/82.0/78.0',
+    'Forecast: More of the same',
+    'Heat index is 83.64967',
+)
 
 
 class FakeObserver(object):

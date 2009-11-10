@@ -12,11 +12,7 @@ def run_suite(verbose=False):
 
 
 def get_modules():
-    from . import itest_miniducksim
-    yield itest_miniducksim
     from . import test_miniducksim
     yield test_miniducksim
     from . import test_weatherstation
     yield test_weatherstation
-    from . import itest_weatherstation
-    yield itest_weatherstation

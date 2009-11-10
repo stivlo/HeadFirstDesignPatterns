@@ -1,7 +1,8 @@
+from __future__ import print_function
 
 
 def main():
-    print 'fail'
+    print('fail')
 
 
 class Subject(object):
@@ -53,3 +54,21 @@ class WeatherData(object):
         self.temperature = temperature
         self.humidity = humidity
         self.pressure = pressure
+
+
+class CurrentConditionsDisplay(object):
+    temperature = 0.0
+    humidity = 0.0
+
+    def __init__(self, weather_data):
+        self.weather_data = weather_data
+        self.weather_data.register_observer(self)
+
+    def update(self, temperature, humidity, pressure):
+        self.temperature = temperature
+        self.humidity = humidity
+        self.display()
+
+    def display(self):
+        print("Current conditions: " + str(self.temperature) +
+              "F degrees and " + str(self.humidity) + "% humidity")
