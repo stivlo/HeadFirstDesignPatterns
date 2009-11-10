@@ -1,45 +1,8 @@
 from unittest import TestCase
 
-from ..observer.weatherstation import Subject, Observer, DisplayElement, \
-                                      WeatherData, CurrentConditionsDisplay, \
+from ..observer.weatherstation import WeatherData, CurrentConditionsDisplay, \
                                       main as weatherstation
 from ._support import call_and_capture_output
-
-
-class TestSubject(TestCase):
-
-    def setUp(self):
-        self.subject = Subject()
-
-    def test_register_observer_is_unimplemented(self):
-        self.assertRaises(NotImplementedError,
-                          self.subject.register_observer, None)
-
-    def test_remove_observer_is_unimplemented(self):
-        self.assertRaises(NotImplementedError,
-                          self.subject.remove_observer, None)
-
-    def test_notify_observers_is_unimplemented(self):
-        self.assertRaises(NotImplementedError, self.subject.notify_observers)
-
-
-class TestObserver(TestCase):
-
-    def setUp(self):
-        self.observer = Observer()
-
-    def test_update_is_unimplemented(self):
-        self.assertRaises(NotImplementedError, self.observer.update,
-                          None, None, None)
-
-
-class TestDisplayElement(TestCase):
-
-    def setUp(self):
-        self.display_element = DisplayElement()
-
-    def test_display_is_unimplemented(self):
-        self.assertRaises(NotImplementedError, self.display_element.display)
 
 
 class TestWeatherData(TestCase):
@@ -114,8 +77,6 @@ class TestCurrentConditionsDisplay(TestCase):
 class TestWeatherStation(TestCase):
 
     def test_weatherstation(self):
-        return
-
         out = call_and_capture_output(weatherstation)
         self.assertNotEqual('', out)
         for i, line in enumerate(out.splitlines()):
@@ -126,15 +87,15 @@ EXPECTED_LINES = (
     'Current conditions: 80.0F degrees and 65.0% humidity',
     'Avg/Max/Min temperature = 80.0/80.0/80.0',
     'Forecast: Improving weather on the way!',
-    'Heat index is 82.95535',
+    'Heat index is 82.9554',
     'Current conditions: 82.0F degrees and 70.0% humidity',
     'Avg/Max/Min temperature = 81.0/82.0/80.0',
     'Forecast: Watch out for cooler, rainy weather',
-    'Heat index is 86.90124',
+    'Heat index is 86.9012',
     'Current conditions: 78.0F degrees and 90.0% humidity',
     'Avg/Max/Min temperature = 80.0/82.0/78.0',
     'Forecast: More of the same',
-    'Heat index is 83.64967',
+    'Heat index is 83.6497',
 )
 
 
