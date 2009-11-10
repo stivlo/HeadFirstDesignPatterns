@@ -1,3 +1,0 @@
-#!/bin/bash
-HERE="`dirname $0`"
-java -cp $HERE/../classes headfirst.observer.weather.WeatherStation
