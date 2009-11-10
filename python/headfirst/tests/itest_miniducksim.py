@@ -1,19 +1,14 @@
-import os
-import sys
-from io import BytesIO
 from unittest import TestCase
 
-from headfirst.strategy.miniducksim import main as miniducksim
+from ..strategy.miniducksim import main as miniducksim
+from ._support import call_and_capture_output
 
 
 class TestMiniDuckSim(TestCase):
 
     def test_miniducksim(self):
-        stdout = BytesIO()
-        sys.stdout = stdout
-        miniducksim()
-        sys.stdout = sys.__stdout__
-        for i, line in enumerate(stdout.getvalue().splitlines()):
+        out = call_and_capture_output(miniducksim)
+        for i, line in enumerate(out.splitlines()):
             self.assertEqual(EXPECTED_LINES[i], line)
 
 
