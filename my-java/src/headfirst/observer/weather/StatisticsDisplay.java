@@ -1,5 +1,9 @@
 package headfirst.observer.weather;
 
+import java.util.Observable;
+import java.util.Observer;
+
+
 public class StatisticsDisplay implements Observer, DisplayElement {
     public float maxTemp = 0.0f;
     public float minTemp = 200;
@@ -9,22 +13,27 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 
     public StatisticsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+        weatherData.addObserver(this);
     }
 
-    public void update(float temperature, float humidity, float pressure) {
-        tempSum += temperature;
-        numReadings++;
+    public void update(Observable obs, Object arg) {
+        if (obs instanceof WeatherData) {
+            WeatherData weatherData = (WeatherData)obs;
 
-        if (temperature > maxTemp) {
-            maxTemp = temperature;
+            float temperature = weatherData.getTemperature();
+            tempSum += temperature;
+            numReadings++;
+
+            if (temperature > maxTemp) {
+                maxTemp = temperature;
+            }
+
+            if (temperature < minTemp) {
+                minTemp = temperature;
+            }
+
+            display();
         }
-
-        if (temperature < minTemp) {
-            minTemp = temperature;
-        }
-
-        display();
     }
 
     public void display() {
