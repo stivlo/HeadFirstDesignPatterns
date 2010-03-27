@@ -22,4 +22,5 @@ TEST_MODULES = (
     'test_weatherstation',
     'test_lifechangingapp',
     'test_starbuzzcoffee',
+    'test_iodecorator',
 )
