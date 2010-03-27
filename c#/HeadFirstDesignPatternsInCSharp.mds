@@ -1,0 +1,59 @@
+<Combine fileversion="2.0">
+  <Configurations />
+  <StartMode startupentry="DeveloperTests" single="True">
+    <Execute type="None" entry="DeveloperTests" />
+    <Execute type="None" entry="TemplateMethod.CaffeineBeverage" />
+    <Execute type="None" entry="Strategy.Character" />
+    <Execute type="None" entry="State.GumballMachine" />
+    <Execute type="None" entry="Adapter.Birds" />
+    <Execute type="None" entry="Observer.WeatherData" />
+    <Execute type="None" entry="Command.RemoteControl" />
+    <Execute type="None" entry="Compound.Duck" />
+    <Execute type="None" entry="Proxy.CSharp" />
+    <Execute type="None" entry="MVCWinFormView" />
+    <Execute type="None" entry="Proxy.Dynamic.Net" />
+    <Execute type="None" entry="Composite.Menu" />
+    <Execute type="None" entry="Proxy.Virtual.WinApp" />
+    <Execute type="None" entry="Decorator.Starbuzz" />
+    <Execute type="None" entry="MVC.Model" />
+    <Execute type="None" entry="MVC.Controller.WinForm" />
+    <Execute type="None" entry="Iterator.Menu" />
+    <Execute type="None" entry="Strategy.Duck" />
+    <Execute type="None" entry="Iterator.CSharp" />
+    <Execute type="None" entry="AbstractFactory.PizzaStore" />
+    <Execute type="None" entry="Facade.HomeTheater" />
+    <Execute type="None" entry="Factory.PizzaStore" />
+    <Execute type="None" entry="Strategy.Football" />
+    <Execute type="None" entry="Proxy.GumballMachine" />
+    <Execute type="None" entry="Singleton.InterestRate" />
+    <Execute type="None" entry="MVC.Controller.WebForm" />
+  </StartMode>
+  <Entries>
+    <Entry filename="DeveloperTests/DeveloperTests.mdp" />
+    <Entry filename="TemplateMethod.CaffeineBeverage/TemplateMethod.CaffeineBeverage.mdp" />
+    <Entry filename="Strategy.Character/Strategy.Character.mdp" />
+    <Entry filename="State.GumballMachine/State.GumballMachine.mdp" />
+    <Entry filename="Adapter.Birds/Adapter.Birds.mdp" />
+    <Entry filename="Observer.WeatherData/Observer.WeatherData.mdp" />
+    <Entry filename="Command.RemoteControl/Command.RemoteControl.mdp" />
+    <Entry filename="Compound.Duck/Compound.Duck.mdp" />
+    <Entry filename="Proxy.CSharp/Proxy.CSharp.mdp" />
+    <Entry filename="MVCWinFormView/MVCWinFormView.mdp" />
+    <Entry filename="Proxy.Dynamic.Net/Proxy.Dynamic.Net.mdp" />
+    <Entry filename="Composite.Menu/Composite.Menu.mdp" />
+    <Entry filename="Proxy.Virtual.WinApp/Proxy.Virtual.WinApp.mdp" />
+    <Entry filename="Decorator.Starbuzz/Decorator.Starbuzz.mdp" />
+    <Entry filename="MVC.Model/MVC.Model.mdp" />
+    <Entry filename="MVC.Controller.WinForm/MVC.Controller.WinForm.mdp" />
+    <Entry filename="Iterator.Menu/Iterator.Menu.mdp" />
+    <Entry filename="Strategy.Duck/Strategy.Duck.mdp" />
+    <Entry filename="Iterator.CSharp/Iterator.CSharp.mdp" />
+    <Entry filename="AbstractFactory.PizzaStore/AbstractFactory.PizzaStore.mdp" />
+    <Entry filename="Facade.HomeTheater/Facade.HomeTheater.mdp" />
+    <Entry filename="Factory.PizzaStore/Factory.PizzaStore.mdp" />
+    <Entry filename="Strategy.Football/Strategy.Football.mdp" />
+    <Entry filename="Proxy.GumballMachine/Proxy.GumballMachine.mdp" />
+    <Entry filename="Singleton.InterestRate/Singleton.InterestRate.mdp" />
+    <Entry filename="MVC.Controller.WebForm/MVC.Controller.WebForm.mdp" />
+  </Entries>
+</Combine>

@@ -1,0 +1,39 @@
+<Project name="Compound.Duck" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.Compound.Duck" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.Compound.Duck" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.Compound.Duck" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AbstractDuckFactory.cs" subtype="Code" buildaction="Compile" />
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="CountingDuckFactory.cs" subtype="Code" buildaction="Compile" />
+    <File name="DuckCall.cs" subtype="Code" buildaction="Compile" />
+    <File name="Flock.cs" subtype="Code" buildaction="Compile" />
+    <File name="Goose.cs" subtype="Code" buildaction="Compile" />
+    <File name="GooseAdapter.cs" subtype="Code" buildaction="Compile" />
+    <File name="IObserver.cs" subtype="Code" buildaction="Compile" />
+    <File name="IQuackable.cs" subtype="Code" buildaction="Compile" />
+    <File name="IQuackObservable.cs" subtype="Code" buildaction="Compile" />
+    <File name="MallardDuck.cs" subtype="Code" buildaction="Compile" />
+    <File name="Observable.cs" subtype="Code" buildaction="Compile" />
+    <File name="QuackCounter.cs" subtype="Code" buildaction="Compile" />
+    <File name="Quackologist.cs" subtype="Code" buildaction="Compile" />
+    <File name="RedheadDuck.cs" subtype="Code" buildaction="Compile" />
+    <File name="RubberDuck.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

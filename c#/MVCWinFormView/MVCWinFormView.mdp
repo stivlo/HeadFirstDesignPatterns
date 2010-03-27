@@ -1,0 +1,31 @@
+<Project name="MVCWinFormView" fileversion="2.0" language="C#" DefaultNamespace="MVCWinFormView" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.MVC.MVCWinFormView" />
+      <Build debugmode="True" target="WinExe" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.MVC.MVCWinFormView" />
+      <Build debugmode="False" target="WinExe" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="App.config" subtype="Code" buildaction="Nothing" />
+    <File name="App.ico" subtype="Code" buildaction="Exclude" />
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="WinFormView.cs" subtype="Code" buildaction="Compile" />
+    <File name="WinFormView.resx" subtype="Code" buildaction="EmbedAsResource" dependson="/home/me/repos/HeadFirstDesignPatterns.git/c#/MVCWinFormView/WinFormView.cs" resource_id="MVCWinFormView.WinFormView.resources" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Project" localcopy="True" refto="MVC.Controller.WinForm" />
+  </References>
+</Project>

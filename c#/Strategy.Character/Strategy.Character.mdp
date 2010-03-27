@@ -1,0 +1,34 @@
+<Project name="Strategy.Character" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.Strategy.Character" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.Strategy.Character" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.Strategy.Character" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="AxeBehavior.cs" subtype="Code" buildaction="Compile" />
+    <File name="BowAndArrowBehavior.cs" subtype="Code" buildaction="Compile" />
+    <File name="Character.cs" subtype="Code" buildaction="Compile" />
+    <File name="IWeaponBehavior.cs" subtype="Code" buildaction="Compile" />
+    <File name="King.cs" subtype="Code" buildaction="Compile" />
+    <File name="KnifeBehavior.cs" subtype="Code" buildaction="Compile" />
+    <File name="Knight.cs" subtype="Code" buildaction="Compile" />
+    <File name="Queen.cs" subtype="Code" buildaction="Compile" />
+    <File name="SwordBehavior.cs" subtype="Code" buildaction="Compile" />
+    <File name="Troll.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

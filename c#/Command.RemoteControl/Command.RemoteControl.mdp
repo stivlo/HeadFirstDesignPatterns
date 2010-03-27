@@ -1,0 +1,45 @@
+<Project name="Command.RemoteControl" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.Command.RemoteControl" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.Command.RemoteControl" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.Command.RemoteControl" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="CeilingFan.cs" subtype="Code" buildaction="Compile" />
+    <File name="CeilingFanOffCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="CeilingFanOnCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="Command.cs" subtype="Code" buildaction="Compile" />
+    <File name="GarageDoor.cs" subtype="Code" buildaction="Compile" />
+    <File name="GarageDoorDownCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="GarageDoorUpCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="Hottub.cs" subtype="Code" buildaction="Compile" />
+    <File name="HottubOffCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="HottubOnCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="Light.cs" subtype="Code" buildaction="Compile" />
+    <File name="LightOffCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="LightOnCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="LivingroomLightOffCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="LivingroomLightOnCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="NoCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="RemoteControl.cs" subtype="Code" buildaction="Compile" />
+    <File name="SimpleRemoteControl.cs" subtype="Code" buildaction="Compile" />
+    <File name="Stereo.cs" subtype="Code" buildaction="Compile" />
+    <File name="StereoOffCommand.cs" subtype="Code" buildaction="Compile" />
+    <File name="StereoOnWithCDCommand.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

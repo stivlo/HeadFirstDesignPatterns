@@ -1,0 +1,35 @@
+<Project name="Decorator.Starbuzz" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.Decorator.Starbuzz" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.Decorator.Starbuzz" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.Decorator.Starbuzz" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="BeverageEnumerators.cs" subtype="Code" buildaction="Compile" />
+    <File name="Beverages.cs" subtype="Code" buildaction="Compile" />
+    <File name="CondimentDecorator.cs" subtype="Code" buildaction="Compile" />
+    <File name="DarkRoast.cs" subtype="Code" buildaction="Compile" />
+    <File name="Decaf.cs" subtype="Code" buildaction="Compile" />
+    <File name="Expresso.cs" subtype="Code" buildaction="Compile" />
+    <File name="HouseBlend.cs" subtype="Code" buildaction="Compile" />
+    <File name="Mocha.cs" subtype="Code" buildaction="Compile" />
+    <File name="Soy.cs" subtype="Code" buildaction="Compile" />
+    <File name="SteamedMilk.cs" subtype="Code" buildaction="Compile" />
+    <File name="Whip.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

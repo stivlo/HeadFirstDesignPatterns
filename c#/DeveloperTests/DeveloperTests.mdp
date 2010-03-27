@@ -1,0 +1,67 @@
+<Project name="DeveloperTests" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.DeveloperTests" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.DeveloperTests" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.DeveloperTests" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AbstractFactoryPizzaStoreFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="AdapterBirdFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="CommandRemoteControlFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="CompositeMenuFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="CompoundDuckFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="DecoratorStarbuzzFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="FacadeHomeTheaterFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="FactoryPizzaStoreFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="IteratorCSharpCollectionFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="IteratorCSharpFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="IteratorMenuFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="MVCFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="ObserverCurrentConditionDisplayFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="ObserverWeatherDataDisplayFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="ProxyDynamicNetFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="SingletonRateFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="StateGumballMachineFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="StrategyDuckFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="StrategyFootballFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="StrategyWeaponFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="TemplateMethodCaffeineFixture.cs" subtype="Code" buildaction="Compile" />
+    <File name="bin/Debug/HeadFirstDesignPatterns.DeveloperTests.dll.config" subtype="Code" buildaction="Nothing" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Project" localcopy="True" refto="Strategy.Character" />
+    <ProjectReference type="Project" localcopy="True" refto="Strategy.Football" />
+    <ProjectReference type="Project" localcopy="True" refto="Observer.WeatherData" />
+    <ProjectReference type="Project" localcopy="True" refto="Decorator.Starbuzz" />
+    <ProjectReference type="Project" localcopy="True" refto="Factory.PizzaStore" />
+    <ProjectReference type="Project" localcopy="True" refto="AbstractFactory.PizzaStore" />
+    <ProjectReference type="Project" localcopy="True" refto="Singleton.InterestRate" />
+    <ProjectReference type="Project" localcopy="True" refto="Command.RemoteControl" />
+    <ProjectReference type="Project" localcopy="True" refto="Adapter.Birds" />
+    <ProjectReference type="Project" localcopy="True" refto="Facade.HomeTheater" />
+    <ProjectReference type="Project" localcopy="True" refto="TemplateMethod.CaffeineBeverage" />
+    <ProjectReference type="Project" localcopy="True" refto="Iterator.Menu" />
+    <ProjectReference type="Project" localcopy="True" refto="Iterator.CSharp" />
+    <ProjectReference type="Project" localcopy="True" refto="Composite.Menu" />
+    <ProjectReference type="Project" localcopy="True" refto="State.GumballMachine" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <ProjectReference type="Project" localcopy="True" refto="Proxy.Dynamic.Net" />
+    <ProjectReference type="Project" localcopy="True" refto="Compound.Duck" />
+    <ProjectReference type="Project" localcopy="True" refto="MVC.Model" />
+    <ProjectReference type="Project" localcopy="True" refto="MVC.Controller.WinForm" />
+    <ProjectReference type="Project" localcopy="True" refto="Strategy.Duck" />
+  </References>
+</Project>

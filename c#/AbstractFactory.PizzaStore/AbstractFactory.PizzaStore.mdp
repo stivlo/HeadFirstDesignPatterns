@@ -1,0 +1,56 @@
+<Project name="AbstractFactory.PizzaStore" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.AbstractFactory.PizzaStore" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.AbstractFactory.PizzaStore" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.AbstractFactory.PizzaStore" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="BlackOlives.cs" subtype="Code" buildaction="Compile" />
+    <File name="CheesePizza.cs" subtype="Code" buildaction="Compile" />
+    <File name="ChicagoPizzaIngredientFactory.cs" subtype="Code" buildaction="Compile" />
+    <File name="ChicagoPizzaStore.cs" subtype="Code" buildaction="Compile" />
+    <File name="ClamPizza.cs" subtype="Code" buildaction="Compile" />
+    <File name="EggPlant.cs" subtype="Code" buildaction="Compile" />
+    <File name="FreshClams.cs" subtype="Code" buildaction="Compile" />
+    <File name="FrozenClams.cs" subtype="Code" buildaction="Compile" />
+    <File name="Garlic.cs" subtype="Code" buildaction="Compile" />
+    <File name="ICheese.cs" subtype="Code" buildaction="Compile" />
+    <File name="IClam.cs" subtype="Code" buildaction="Compile" />
+    <File name="IDough.cs" subtype="Code" buildaction="Compile" />
+    <File name="IPepperoni.cs" subtype="Code" buildaction="Compile" />
+    <File name="IPizzaIngredientFactory.cs" subtype="Code" buildaction="Compile" />
+    <File name="ISauce.cs" subtype="Code" buildaction="Compile" />
+    <File name="IVeggies.cs" subtype="Code" buildaction="Compile" />
+    <File name="MarinaraSauce.cs" subtype="Code" buildaction="Compile" />
+    <File name="Mozzerella.cs" subtype="Code" buildaction="Compile" />
+    <File name="Mushroom.cs" subtype="Code" buildaction="Compile" />
+    <File name="NYPizzaIngredientFactory.cs" subtype="Code" buildaction="Compile" />
+    <File name="NYPizzaStore.cs" subtype="Code" buildaction="Compile" />
+    <File name="Onion.cs" subtype="Code" buildaction="Compile" />
+    <File name="PepperoniPizza.cs" subtype="Code" buildaction="Compile" />
+    <File name="Pizza.cs" subtype="Code" buildaction="Compile" />
+    <File name="PizzaStore.cs" subtype="Code" buildaction="Compile" />
+    <File name="PlumTomatoSauce.cs" subtype="Code" buildaction="Compile" />
+    <File name="RedPepper.cs" subtype="Code" buildaction="Compile" />
+    <File name="ReggianoCheese.cs" subtype="Code" buildaction="Compile" />
+    <File name="SlicedPepperoni.cs" subtype="Code" buildaction="Compile" />
+    <File name="Spinach.cs" subtype="Code" buildaction="Compile" />
+    <File name="ThickCrustDough.cs" subtype="Code" buildaction="Compile" />
+    <File name="ThinCrustDough.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>

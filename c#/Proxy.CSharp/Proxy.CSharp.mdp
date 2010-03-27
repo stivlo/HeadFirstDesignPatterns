@@ -1,0 +1,33 @@
+<Project name="Proxy.CSharp" fileversion="2.0" language="C#" DefaultNamespace="HeadFirstDesignPatterns.Proxy.CSharp" targetFramework="2.0" ctype="DotNetProject">
+  <Configurations active="">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Debug/" assembly="HeadFirstDesignPatterns.Proxy.CSharp" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="bin/Release/" assembly="HeadFirstDesignPatterns.Proxy.CSharp" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="False" consolepause="True" runtime="MsNet" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="False" unsafecodeallowed="False" generateoverflowchecks="False" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="Client.cs" subtype="Code" buildaction="Compile" />
+    <File name="HowTo.xml" subtype="Code" buildaction="Exclude" />
+    <File name="Listener.cs" subtype="Code" buildaction="Compile" />
+    <File name="RemotableType.cs" subtype="Code" buildaction="Compile" />
+    <File name="Client/Client.exe" subtype="Code" buildaction="Exclude" />
+    <File name="Client/Client.exe.config" subtype="Code" buildaction="Nothing" />
+    <File name="Client/Listener.exe" subtype="Code" buildaction="Exclude" />
+    <File name="Client/Listener.exe.config" subtype="Code" buildaction="Nothing" />
+    <File name="Client/RemotableType.dll" subtype="Code" buildaction="Exclude" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+</Project>
