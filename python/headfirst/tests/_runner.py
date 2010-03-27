@@ -12,11 +12,14 @@ def run_suite(verbose=False):
 
 
 def get_modules():
-    from . import test_miniducksim
-    yield test_miniducksim
+    for mod in TEST_MODULES:
+        yield __import__('headfirst.tests.{0}'.format(mod),
+                         fromlist=[mod])
 
-    from . import test_weatherstation
-    yield test_weatherstation
 
-    from . import test_lifechangingapp
-    yield test_lifechangingapp
+TEST_MODULES = (
+    'test_miniducksim',
+    'test_weatherstation',
+    'test_lifechangingapp',
+    'test_starbuzzcoffee',
+)
