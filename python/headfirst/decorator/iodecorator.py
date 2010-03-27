@@ -14,6 +14,8 @@ def main(sysargs=sys.argv[:]):
         print(char, end='')
         char = instream.read(1)
 
+    instream.close()
+
     return 0
 
 
