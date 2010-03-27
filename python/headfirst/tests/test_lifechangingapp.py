@@ -8,9 +8,6 @@ class TestLifeChangingApp(TestCase):
 
     def test_lifechangingapp(self):
         out = call_and_capture_output(LCA.main)
-        for i, line in enumerate(out.splitlines()):
-            self.assertEqual(EXPECTED_LINES[i], line)
-
-
-EXPECTED_LINES = (
-)
+        lines = out.splitlines()
+        self.assertTrue('Come on, do it!' in lines)
+        self.assertTrue("Don't do it, you might regret it!" in lines)
