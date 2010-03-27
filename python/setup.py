@@ -28,7 +28,6 @@ def main():
         return run_tests()
         
     SETUP_ARGS.update(dict(
-        long_description=open('README.txt').read(),
         scripts=glob.glob('scripts/*'),
     ))
     setup(**SETUP_ARGS)
