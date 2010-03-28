@@ -2,17 +2,14 @@ package headfirst.factory.pizzas;
 
 
 public class PizzaStore {
+    SimplePizzaFactory factory;
+
+    public PizzaStore(SimplePizzaFactory factory) {
+        this.factory = factory;
+    }
 
     public Pizza orderPizza(String type) {
-        Pizza pizza;
-
-        if (type.equals("cheese")) {
-            pizza = new CheesePizza();
-        } else if (type.equals("greek")) {
-            pizza = new GreekPizza();
-        } else if (type.equals("pepperoni")) {
-            pizza = new PepperoniPizza();
-        }
+        Pizza pizza = factory.createPizza(type);
 
         pizza.prepare();
         pizza.bake();
