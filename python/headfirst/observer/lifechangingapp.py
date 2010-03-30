@@ -14,6 +14,13 @@ def devil_listener(event):
 
 class Application(tkinter.Frame):
     button = None
+    _button_config = dict(
+        text="Should I do it?",
+        height=10,
+        width=30,
+        background='blue',
+        foreground='white'
+    )
 
     def __init__(self, master=None):
         tkinter.Frame.__init__(self, master)
@@ -22,12 +29,12 @@ class Application(tkinter.Frame):
 
     def create_widgets(self):
         self.button = tkinter.Button(self)
-        self.button.config(text="Should I do it?")
+        self.button.config(**self._button_config)
 
         self.button.bind("<Button-1>", angel_listener)
         self.button.bind("<ButtonRelease-1>", devil_listener)
 
-        self.button.pack({"side": "left"})
+        self.button.pack(side=tkinter.LEFT)
 
 
 def main():
@@ -35,8 +42,6 @@ def main():
 
     app = Application(master=root)
     app.master.title('Life-Changing Application')
-    app.master.minsize(600, 600)
-    app.master.maxsize(1000, 400)
     app.mainloop()
 
     try:
