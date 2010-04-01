@@ -2,26 +2,26 @@ package headfirst.templatemethod.simplebarista;
 
 public class Tea {
  
-	void prepareRecipe() {
-		boilWater();
-		steepTeaBag();
-		pourInCup();
-		addLemon();
-	}
+    void prepareRecipe() {
+        boilWater();
+        steepTeaBag();
+        pourInCup();
+        addLemon();
+    }
  
-	public void boilWater() {
-		System.out.println("Boiling water");
-	}
+    public void boilWater() {
+        System.out.println("Boiling water");
+    }
  
-	public void steepTeaBag() {
-		System.out.println("Steeping the tea");
-	}
+    public void steepTeaBag() {
+        System.out.println("Steeping the tea");
+    }
  
-	public void addLemon() {
-		System.out.println("Adding Lemon");
-	}
+    public void addLemon() {
+        System.out.println("Adding Lemon");
+    }
  
-	public void pourInCup() {
-		System.out.println("Pouring into cup");
-	}
+    public void pourInCup() {
+        System.out.println("Pouring into cup");
+    }
 }

@@ -1,15 +1,15 @@
 package headfirst.command.remote;
 
 public class HottubOnCommand implements Command {
-	Hottub hottub;
+    Hottub hottub;
 
-	public HottubOnCommand(Hottub hottub) {
-		this.hottub = hottub;
-	}
+    public HottubOnCommand(Hottub hottub) {
+        this.hottub = hottub;
+    }
 
-	public void execute() {
-		hottub.on();
-		hottub.heat();
-		hottub.bubblesOn();
-	}
+    public void execute() {
+        hottub.on();
+        hottub.heat();
+        hottub.bubblesOn();
+    }
 }

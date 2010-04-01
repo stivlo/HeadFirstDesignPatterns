@@ -6,15 +6,15 @@ import java.util.*;
 // This is the invoker
 //
 public class SimpleRemoteControl {
-	Command slot;
+    Command slot;
  
-	public SimpleRemoteControl() {}
+    public SimpleRemoteControl() {}
  
-	public void setCommand(Command command) {
-		slot = command;
-	}
+    public void setCommand(Command command) {
+        slot = command;
+    }
  
-	public void buttonWasPressed() {
-		slot.execute();
-	}
+    public void buttonWasPressed() {
+        slot.execute();
+    }
 }
