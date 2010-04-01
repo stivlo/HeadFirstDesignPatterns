@@ -1,20 +1,40 @@
 using System;
 
+
+
 namespace HeadFirstDesignPatterns.Strategy.Character
+
 {
-	/// <summary>n
-	/// Character
-	/// </summary>
-	public abstract class Character
-	{
-		protected IWeaponBehavior weapon;
 
-		public Character()
-		{}
+    /// <summary>n
 
-		public string Fight()
-		{
-			return weapon.UsingWeapon();
-		}
-	}
+    /// Character
+
+    /// </summary>
+
+    public abstract class Character
+
+    {
+
+        protected IWeaponBehavior weapon;
+
+
+
+        public Character()
+
+        {}
+
+
+
+        public string Fight()
+
+        {
+
+            return weapon.UsingWeapon();
+
+        }
+
+    }
+
 }
+

@@ -1,22 +1,44 @@
 using System;
 
+
+
 namespace HeadFirstDesignPatterns.Strategy.Duck
+
 {
-	/// <summary>
-	/// FlyWithWings
-	/// </summary>
-	public class FlyNoWay : IFlyBehavior
-	{
-		public FlyNoWay()
-		{}
 
-		#region IFlyBehavior Members
+    /// <summary>
 
-		public object Fly()
-		{
-			return "I can't fly.";
-		}
+    /// FlyWithWings
 
-		#endregion
-	}
+    /// </summary>
+
+    public class FlyNoWay : IFlyBehavior
+
+    {
+
+        public FlyNoWay()
+
+        {}
+
+
+
+        #region IFlyBehavior Members
+
+
+
+        public object Fly()
+
+        {
+
+            return "I can't fly.";
+
+        }
+
+
+
+        #endregion
+
+    }
+
 }
+

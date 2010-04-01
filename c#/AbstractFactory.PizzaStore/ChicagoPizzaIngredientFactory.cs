@@ -1,50 +1,100 @@
 using System;
 
+
+
 namespace HeadFirstDesignPatterns.AbstractFactory.PizzaStore
+
 {
-	/// <summary>
-	/// Summary description for ChicagoPizzaIngredientFactory.
-	/// </summary>
-	public class ChicagoPizzaIngredientFactory : IPizzaIngredientFactory
-	{
-		#region Constructor
-		public ChicagoPizzaIngredientFactory()
-		{}
-		#endregion//Constructor
 
-		#region ChicagoPizzaIngredientFactory Members
+    /// <summary>
 
-		public IDough CreateDough()
-		{
-			return new ThickCrustDough();
-		}
+    /// Summary description for ChicagoPizzaIngredientFactory.
 
-		public ISauce CreateSauce()
-		{
-			return new PlumTomatoSauce();
-		}
+    /// </summary>
 
-		public ICheese CreateCheese()
-		{
-			return new Mozzerella();
-		}
+    public class ChicagoPizzaIngredientFactory : IPizzaIngredientFactory
 
-		public IVeggies[] CreateVeggies()
-		{
-			IVeggies[] veggies = {new BlackOlives(), new Spinach(), new EggPlant()};
-			return veggies;
-		}
+    {
 
-		public IPepperoni CreatePepporoni()
-		{
-			return new SlicedPepperoni();
-		}
+        #region Constructor
 
-		public IClams CreateClam()
-		{
-			return new FrozenClams();
-		}
+        public ChicagoPizzaIngredientFactory()
 
-		#endregion
-	}
+        {}
+
+        #endregion//Constructor
+
+
+
+        #region ChicagoPizzaIngredientFactory Members
+
+
+
+        public IDough CreateDough()
+
+        {
+
+            return new ThickCrustDough();
+
+        }
+
+
+
+        public ISauce CreateSauce()
+
+        {
+
+            return new PlumTomatoSauce();
+
+        }
+
+
+
+        public ICheese CreateCheese()
+
+        {
+
+            return new Mozzerella();
+
+        }
+
+
+
+        public IVeggies[] CreateVeggies()
+
+        {
+
+            IVeggies[] veggies = {new BlackOlives(), new Spinach(), new EggPlant()};
+
+            return veggies;
+
+        }
+
+
+
+        public IPepperoni CreatePepporoni()
+
+        {
+
+            return new SlicedPepperoni();
+
+        }
+
+
+
+        public IClams CreateClam()
+
+        {
+
+            return new FrozenClams();
+
+        }
+
+
+
+        #endregion
+
+    }
+
 }
+

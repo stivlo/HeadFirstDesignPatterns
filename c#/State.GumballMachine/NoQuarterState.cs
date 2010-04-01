@@ -1,60 +1,120 @@
 using System;
 
+
+
 namespace HeadFirstDesignPatterns.State.GumballMachine
+
 {
-	/// <summary>
-	/// Summary description for NoQuarterState.
-	/// </summary>
-	public class NoQuarterState : State
-	{
-		#region Members
-		GumballMachine gumballMachine;
-		State hasQuarterState;
-		#endregion//Members
 
-		#region Constructor
-		public NoQuarterState(GumballMachine gumballMachine)
-		{
-			this.gumballMachine = gumballMachine;
-			hasQuarterState = new HasQuarterState(gumballMachine);
-		}
-		#endregion//Constructor
+    /// <summary>
 
-		#region State Members
+    /// Summary description for NoQuarterState.
 
-		public string InsertQuarter()
-		{
-			gumballMachine.StateOfMachine = hasQuarterState;
-			return "You inserted a quarter\n";
-		}
+    /// </summary>
 
-		public string EjectQuarter()
-		{
-			return "You haven't inserted a quarter\n";
-		}
+    public class NoQuarterState : State
 
-		public string TurnCrank()
-		{
-			return "You turned but there's no quarter\n";
-		}
+    {
 
-		public string Dispense()
-		{
-			string outPut;
+        #region Members
 
-			outPut = gumballMachine.ReleaseBall();
-			outPut += "You need to pay first\n";
+        GumballMachine gumballMachine;
 
-			return outPut;
-		}
+        State hasQuarterState;
 
-		#endregion
+        #endregion//Members
 
-		#region ToString override
-		public override string ToString()
-		{
-			return "waiting for quarter";
-		}
-		#endregion//ToString override
-	}
+
+
+        #region Constructor
+
+        public NoQuarterState(GumballMachine gumballMachine)
+
+        {
+
+            this.gumballMachine = gumballMachine;
+
+            hasQuarterState = new HasQuarterState(gumballMachine);
+
+        }
+
+        #endregion//Constructor
+
+
+
+        #region State Members
+
+
+
+        public string InsertQuarter()
+
+        {
+
+            gumballMachine.StateOfMachine = hasQuarterState;
+
+            return "You inserted a quarter\n";
+
+        }
+
+
+
+        public string EjectQuarter()
+
+        {
+
+            return "You haven't inserted a quarter\n";
+
+        }
+
+
+
+        public string TurnCrank()
+
+        {
+
+            return "You turned but there's no quarter\n";
+
+        }
+
+
+
+        public string Dispense()
+
+        {
+
+            string outPut;
+
+
+
+            outPut = gumballMachine.ReleaseBall();
+
+            outPut += "You need to pay first\n";
+
+
+
+            return outPut;
+
+        }
+
+
+
+        #endregion
+
+
+
+        #region ToString override
+
+        public override string ToString()
+
+        {
+
+            return "waiting for quarter";
+
+        }
+
+        #endregion//ToString override
+
+    }
+
 }
+
