@@ -2,7 +2,7 @@ package headfirst.factory.pizzaaf;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
-    protected Pizza createPizza(String type) {
+    public Pizza createPizza(String type) {
         Pizza pizza = null;
 
         if (type.equals("cheese")) {
