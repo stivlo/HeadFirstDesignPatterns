@@ -2,32 +2,21 @@ package headfirst.factory.pizzaaf;
 
 public class NYPizzaStore extends PizzaStore {
  
-    protected Pizza createPizza(String item) {
+    public Pizza createPizza(String type) {
         Pizza pizza = null;
-        PizzaIngredientFactory ingredientFactory = 
-            new NYPizzaIngredientFactory();
- 
-        if (item.equals("cheese")) {
-  
-            pizza = new CheesePizza(ingredientFactory);
-            pizza.setName("New York Style Cheese Pizza");
-  
-        } else if (item.equals("veggie")) {
- 
-            pizza = new VeggiePizza(ingredientFactory);
-            pizza.setName("New York Style Veggie Pizza");
- 
-        } else if (item.equals("clam")) {
- 
-            pizza = new ClamPizza(ingredientFactory);
-            pizza.setName("New York Style Clam Pizza");
- 
-        } else if (item.equals("pepperoni")) {
 
-            pizza = new PepperoniPizza(ingredientFactory);
-            pizza.setName("New York Style Pepperoni Pizza");
- 
-        } 
+        if (type.equals("cheese")) {
+            pizza = new NYStyleCheesePizza();
+        } else if (type.equals("pepperoni")) {
+            pizza = new NYStylePepperoniPizza();
+        } else if (type.equals("clam")) {
+            pizza = new NYStyleClamPizza();
+        } else if (type.equals("veggie")) {
+            pizza = new NYStyleVeggiePizza();
+        } else {
+            throw new Error();
+        }
+
         return pizza;
     }
 }
