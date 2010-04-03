@@ -1,13 +1,13 @@
 from unittest import TestCase
 
-from headfirst.factory import pizzatestdrive0 as PTD
+from headfirst.factory import pizza0 as P0
 from headfirst.tests._support import call_and_capture_output
 
 
-class TestPizzaTestDrive0(TestCase):
+class TestPizzaFactory0(TestCase):
 
-    def test_pizza_test_drive0(self):
-        out = call_and_capture_output(PTD.main)
+    def test_pizza_factory0(self):
+        out = call_and_capture_output(P0.main)
         self.assertTrue(bool(len(out)))
 
         for i, line in enumerate(out.splitlines()):

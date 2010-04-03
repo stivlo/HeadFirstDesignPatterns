@@ -23,5 +23,6 @@ TEST_MODULES = (
     'test_lifechangingapp',
     'test_starbuzzcoffee',
     'test_iodecorator',
-    'test_pizzatestdrive0',
+    'test_pizzafactory0',
+    'test_pizzafactory1',
 )

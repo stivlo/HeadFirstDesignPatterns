@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+import sys
+from headfirst.factory.pizza1 import main
+sys.exit(main())
