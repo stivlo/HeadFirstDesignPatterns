@@ -4,7 +4,7 @@ package headfirst.factory.pizzaaf;
 public class ChicagoStyleClamPizza extends Pizza {
 
     public ChicagoStyleClamPizza() {
-        name = "Chicago Style Deep Dish Cheese Pizza";
+        name = "Chicago Style Deep Dish Clam Pizza";
         dough = "Extra Thick Crust Dough";
         sauce = "Plum Tomato Sauce";
 
