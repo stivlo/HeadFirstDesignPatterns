@@ -31,8 +31,8 @@ class Application(tkinter.Frame):
         self.button = tkinter.Button(self)
         self.button.config(**self._button_config)
 
-        self.button.bind("<Button-1>", angel_listener)
-        self.button.bind("<ButtonRelease-1>", devil_listener)
+        self.button.bind("<Button-1>", angel_listener, add='+')
+        self.button.bind("<Button-1>", devil_listener, add='+')
 
         self.button.pack(side=tkinter.LEFT)
 
