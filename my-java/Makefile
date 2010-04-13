@@ -23,3 +23,7 @@ compile: $(all_javas)
 .INTERMEDIATE: $(all_javas)
 $(all_javas):
 	$(FIND) $(SOURCE_DIR) -name '*.java' > $@
+
+.PHONY: clean
+clean:
+	$(FIND) $(OUTPUT_DIR) -name '*.class' -exec $(RM) {} ';'
