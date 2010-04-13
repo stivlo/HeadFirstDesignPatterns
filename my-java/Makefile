@@ -8,8 +8,8 @@ FIND := find
 
 JAVAC := javac
 JFLAGS := -sourcepath $(SOURCE_DIR) \
-	  -d $(OUTPUT_DIR) \
-	  -source 1.5
+		-d $(OUTPUT_DIR) \
+		-source 1.5
 
 
 all_javas = all_javas.txt
