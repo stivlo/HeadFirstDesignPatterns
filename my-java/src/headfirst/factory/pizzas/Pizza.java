@@ -28,7 +28,7 @@ abstract public class Pizza {
     public void box() {
         System.out.println("Boxing " + name);
     }
-    
+
     public String toString() {
         StringBuffer display = new StringBuffer();
         display.append("---- " + name + " ----\n");
